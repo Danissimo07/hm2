@@ -3,7 +3,19 @@
 782 -> 8
 918 -> 1
 */
+/*
+Console.WriteLine("Введите трехзначное число: ");
+string number = Console.ReadLine()!;
+int num = int.Parse(number);
 
+int dozen = num / 10;   // 34
+int secondDigit = dozen % 10;
+
+Console.WriteLine("Вторая цифра числа " + number + " равна " + secondDigit);
+Console.WriteLine($"Вторая цифра числа {number} равна {secondDigit}");
+*/
+/////
+/*
 Console.Write("Введите число: ");
 string number = Console.ReadLine();
 int num = int.Parse(number);
@@ -17,22 +29,16 @@ else while (count > 999)
     num = number;
     number = 0;
 }
+*/
 
-
-// Задача 10
-Console.WriteLine("Введите трехзначное число: ");
-string number = Console.ReadLine()!;
-int num = int.Parse(number);
-
-// 345 / 10 = 34     34 % 10 = 4
-/*
-int dozen = num / 10;   // 34
-int secondDigit = dozen % 10;
-
-Console.WriteLine("Вторая цифра числа " + number + " равна " + secondDigit);
-Console.WriteLine($"Вторая цифра числа {number} равна {secondDigit}");
 
 // int secondDigit = num / 10 % 10;
+
+
+//Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+//645 -> 5
+//78 -> третьей цифры нет
+///32679 -> 6
 
 Console.WriteLine("Введите число: ");
 int num = int.Parse(Console.ReadLine()!); // 123456
@@ -53,6 +59,12 @@ else
     Console.WriteLine($"Третья цифра числа {num} равна {thirdDigit}");
 }
 
+///Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+///6 -> да
+///7 -> да
+///1 -> нет
+
+
 Console.WriteLine("Введите номер дня недели: ");
 int day = int.Parse(Console.ReadLine()!);
 
@@ -69,6 +81,9 @@ else
     Console.WriteLine("Такого дня недели нет");
 }
 
+
+
+/*
 Console.WriteLine("Введите номер дня недели: ");
 int day = int.Parse(Console.ReadLine()!);
 
